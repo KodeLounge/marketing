@@ -1,0 +1,130 @@
+.font-size-xlg {
+  font-size: 56px;
+  @media (max-width: 575px) {
+    font-size: 36px;
+  }
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    font-size: 40px;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    font-size: 46px;
+  }
+
+  @media (min-width: 992px) {
+    font-size: 56px;
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    font-size: 56px;
+  }
+}
+.font-size-lg {
+  font-size: 38px;
+  @media (max-width: 575px) {
+    font-size: 24px;
+  }
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    font-size: 26px;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
+  @media (min-width: 992px) {
+    font-size: 38px;
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    font-size: 38px;
+  }
+}
+.font-size-md {
+  font-size: 26px;
+  @media (max-width: 575px) {
+    font-size: 18px;
+  }
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    font-size: 20px;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    font-size: 22px;
+  }
+  @media (min-width: 992px) {
+    font-size: 26px;
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    font-size: 26px;
+  }
+}
+.font-size-sm {
+  font-size: 24px;
+  @media (max-width: 575px) {
+    font-size: 18px;
+  }
+  // Small devices (landscape phones, 576px and up)
+  @media (min-width: 576px) {
+    font-size: 20px;
+  }
+
+  // Medium devices (tablets, 768px and up)
+  @media (min-width: 768px) {
+    font-size: 22px;
+  }
+  @media (min-width: 992px) {
+    font-size: 24px;
+  }
+
+  // Extra large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) {
+    font-size: 24px;
+  }
+}
+
+.font-size-default {
+  font-size: 16px;
+}
+.font-size-xsm {
+  font-size: 12px;
+}
+.font-size-small {
+  font-size: 10px;
+}
+.font-wt-100 {
+  font-weight: 100;
+}
+.font-wt-200 {
+  font-weight: 200;
+}
+.font-wt-300 {
+  font-weight: 300;
+}
+.font-wt-400 {
+  font-weight: 400;
+}
+.font-wt-500 {
+  font-weight: 500;
+}
+.font-wt-600 {
+  font-weight: 600;
+}
+.font-wt-700 {
+  font-weight: 700;
+}
+.font-wt-800 {
+  font-weight: 800;
+}
+.font-wt-900 {
+  font-weight: 900;
+}

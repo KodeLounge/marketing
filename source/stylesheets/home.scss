@@ -1,0 +1,73 @@
+.home-container {
+  .heading {
+    line-height: 66px;
+    position: relative;
+    text-align: center;
+  }
+  .sub-heading {
+    position: relative;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .hero-wrapper,
+  .intro-wrapper {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hero-container,
+  .intro-container {
+    position: relative;
+    height: 90vh;
+    max-height: 600px;
+  }
+
+  .hero-container {
+    color: white;
+    background-color: black;
+  }
+
+  .intro-container {
+  }
+
+  .work-container {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    .work-contents-wrapper {
+      position: relative;
+      width: 90%;
+      left: 5%;
+
+      .work-image {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .testimonial-container {
+    position: relative;
+
+    .testimonial-wrapper {
+      width: 80%;
+      left: 10%;
+
+      .testimonial-contents-wrapper {
+        padding-top: 8%;
+      }
+
+      .client-image {
+        height: 100px;
+        width: auto;
+        float: left;
+      }
+
+      .client-info,
+      .textimonial-text {
+        padding-left: 40px;
+      }
+    }
+  }
+}
