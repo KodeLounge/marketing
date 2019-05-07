@@ -128,3 +128,22 @@
 .font-wt-900 {
   font-weight: 900;
 }
+
+// remove default blue border coming due to botstrap
+textarea:hover,
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:active,
+input[type="text"]:active,
+input[type="email"]:active,
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: 1px solid grey;
+}

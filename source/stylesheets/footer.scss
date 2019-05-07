@@ -1,0 +1,14 @@
+.footer-container {
+  position: relative;
+  height: 40vh;
+  max-height: 400px;
+  background-color: black;
+  color: white;
+  text-align: center;
+
+  h2 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
