@@ -146,7 +146,10 @@
           Pune, India
         </div>
       </div>
-      <div class="map-container col-12 col-md-6"></div>
+      <div class="map-container col-12 col-md-8">
+        <div id="map"></div>
+      </div>
+      <div class="clearfix"></div>
     </div>
   </div>
 
@@ -185,3 +188,23 @@
 </div>
 
 <%= partial "partials/footer" %>
+<script>
+  $(function() {
+    form = $("#contact-us-form");
+    form.parsley();
+  });
+
+  // add map
+    function initMap() {
+      var klLoc = {lat: 18.5122, lng: 73.7737};
+      // The map, centered at KL
+      var map = new google.maps.Map(
+          document.getElementById('map'), {zoom: 12, center: klLoc});
+      // The marker, positioned at kl
+      var marker = new google.maps.Marker({position: klLoc, map: map});
+    }
+
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=<%= data.settings.map_api_key %>&callback=initMap">
+</script>

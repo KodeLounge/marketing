@@ -127,6 +127,15 @@
         text-align: left;
       }
     }
+    .map-container {
+      height: 80vh;
+      width: 90%;
+      position: relative;
+      #map {
+        width: 90%;
+        height: 100%;
+      }
+    }
   }
 
   .contact-container {
@@ -137,16 +146,12 @@
       }
     }
 
-    #contact-us-form {
-      width: 90%;
+    .form-container {
+      width: 90% !important;
 
-      .name-container,
-      .email-container,
-      .subject-container {
-        input {
-          width: 90%;
-          height: 40px;
-        }
+      input {
+        width: 90% !important;
+        height: 40px !important;
       }
 
       #message-contact-us {
