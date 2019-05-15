@@ -1,0 +1,125 @@
+.parsley-form {
+  input[type="text"],
+  input[type="search"],
+  input[type="password"],
+  input[type="email"],
+  select,
+  textarea,
+  input[type="date"],
+  input[type="number"] {
+    border: 1px solid $colorBorderInput;
+    &:focus {
+      border-color: $colorBluePrimary;
+    }
+  }
+
+  .parsley-success {
+    &:focus {
+      border-color: $colorBluePrimary;
+    }
+  }
+
+  .disabled-field {
+    background-color: $colorGrayLightBackground !important;
+    color: $colorGrayMedium;
+  }
+
+  .error-msg {
+    color: $colorRedModerate;
+    top: 7px;
+  }
+
+  .error-tooltip {
+    background-color: $colorRedModerate !important;
+    text-align: left;
+    z-index: 1029 !important;
+    opacity: 1 !important;
+  }
+
+  input.parsley-success,
+  select.parsley-success,
+  textarea.parsley-success {
+    color: $colorBlack;
+    //background-color: #DFF0D8;
+    //border: 1px solid #D6E9C6;
+  }
+
+  input.parsley-error,
+  select.parsley-error,
+  textarea.parsley-error {
+    color: $colorBlack;
+    background-color: #ffffff;
+    border: 1px solid #eed3d7;
+    opacity: 1;
+  }
+
+  .parsley-errors-list {
+    margin: 2px 0 3px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    opacity: 0;
+
+    transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+  }
+
+  .parsley-errors-list.filled {
+    opacity: 1;
+  }
+
+  .tooltip.top .error-tooltip-arrow {
+    border-top-color: $colorRedModerate !important;
+  }
+  .tooltip.top-left .error-tooltip-arrow {
+    border-top-color: $colorRedModerate !important;
+  }
+  .tooltip.top-right .error-tooltip-arrow {
+    border-top-color: $colorRedModerate !important;
+  }
+  .tooltip.right .error-tooltip-arrow {
+    border-right-color: $colorRedModerate !important;
+  }
+  .tooltip.left .error-tooltip-arrow {
+    border-left-color: $colorRedModerate !important;
+  }
+  .tooltip.bottom .error-tooltip-arrow {
+    border-bottom-color: $colorRedModerate !important;
+  }
+  .tooltip.bottom-left .error-tooltip-arrow {
+    border-bottom-color: $colorRedModerate !important;
+  }
+  .tooltip.bottom-right .error-tooltip-arrow {
+    border-bottom-color: $colorRedModerate !important;
+  }
+
+  .parsley-errors-list {
+    position: absolute !important;
+    visibility: hidden !important;
+  }
+
+  .input-validation-error,
+  .input-validation-error:focus {
+    border: 1px solid $colorRedModerate !important;
+  }
+
+  input[type="radio"].input-validation-error {
+    outline: 1px solid $colorRedModerate;
+  }
+
+  input[type="checkbox"].input-validation-error {
+    outline: 1px solid $colorRedModerate;
+  }
+
+  label.unstyled {
+    margin: 0;
+  }
+
+  .form-error {
+    color: $colorRedModerate;
+    margin: 10px 0;
+  }
+}

@@ -162,7 +162,7 @@
         </div>
       </div>
       <div class="form-container col-12 col-md-8 mb-5">
-        <form id="contact-us-form" data-parsley-validate="" data-parsley-ui-enabled="true" data-parsley-trigger="change focusout" data-parsley-focus="first">
+        <form id="contact-us-form" class="parsley-form" data-parsley-validate="" data-parsley-ui-enabled="true" data-parsley-trigger="change focusout" data-parsley-focus="first">
           <div class="font-size-default font-wt-100 my-4">Name <sup>*</sup> </div>
           <div class="name-container">
             <input type="text" id="name-contact-us" required="required" title="Name is required">
@@ -173,7 +173,7 @@
           </div>
           <div class="subject-container">
             <div class="font-size-default font-wt-100 my-4">Subject <sup>*</sup></div>
-            <div><input type="text" id="email-contact-us" required="required" title="Valid email is required"></div>
+            <div><input type="text" id="subject-contact-us" required="required" title="Valid email is required"></div>
           </div>
           <div class="font-size-default font-wt-100 my-4">Message <sup>*</sup></div>
           <div><textarea id="message-contact-us" rows="10" required="required"></textarea></div>
@@ -188,6 +188,7 @@
 </div>
 
 <%= partial "partials/footer" %>
+
 <script>
   $(function() {
     form = $("#contact-us-form");
