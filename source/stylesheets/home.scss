@@ -14,14 +14,17 @@
   }
 
   .hero-wrapper,
-  .intro-wrapper {
+  .intro-wrapper,
+  .about-wrapper {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
   }
 
   .hero-container,
-  .intro-container {
+  .intro-container,
+  .about-container,
+  .team-container {
     position: relative;
     height: 90vh;
     max-height: 600px;
@@ -31,7 +34,8 @@
   .testimonial-container,
   .principles-container,
   .tech-container,
-  .office-container {
+  .office-container,
+  .about-container {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
@@ -46,7 +50,7 @@
 
   .work-container {
     background: lightgray;
-    .work-detail-container{
+    .work-detail-container {
       background: white;
     }
     .work-contents-wrapper {
@@ -70,12 +74,11 @@
 
       .testimonial-contents-wrapper {
         padding-top: 8%;
-
       }
-      .img-container{
+      .img-container {
         display: inline-flex;
       }
-      img{
+      img {
         height: 50%;
       }
       .client-image {
@@ -109,24 +112,30 @@
   }
 
   .tech-container {
-    .tech-images-container {
-      width: 70%;
+    .tech-categories-container {
       position: relative;
-      left: 15%;
 
-      .tech-image-1,
-      .tech-image-2 {
-        position: relative;
-        width: 80%;
-        left: 10%;
-        border: 1px solid grey;
-
-        &:before {
-          content: "";
-          display: block;
-          padding-top: 60%;
+      .tech-category {
+        .tech-heading {
         }
       }
+    }
+  }
+
+  .about-container {
+    background-image: url("../images/team1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+  .team-container {
+    .team-image-container {
+      margin: 20px;
+      height: 100%;
+      background-image: url("../images/team2.png");
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 
@@ -177,9 +186,7 @@
   visibility: hidden !important;
 }
 
-
 // client testimonials section CSS
-
 
 /* CSS talk bubble */
 .talk-bubble {
@@ -189,20 +196,18 @@
   height: auto;
   background-color: lightgray;
 }
-.border{
+.border {
   border: 8px solid #666;
 }
-.round{
+.round {
   border-radius: 30px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
-
 }
-
 
 /* Right triangle, left side slightly down */
 .tri-right.border.left-in:before {
-  content: ' ';
+  content: " ";
   position: absolute;
   width: 0;
   height: 0;
@@ -213,8 +218,8 @@
   border: 20px solid;
   border-color: #666 #666 transparent transparent;
 }
-.tri-right.left-in:after{
-  content: ' ';
+.tri-right.left-in:after {
+  content: " ";
   position: absolute;
   width: 0;
   height: 0;
@@ -226,15 +231,13 @@
   border-color: transparent lightgray transparent transparent;
 }
 
-
-
 /* talk bubble contents */
-.talktext{
+.talktext {
   padding: 1em;
   text-align: left;
   line-height: 1.5em;
 }
-.talktext p{
+.talktext p {
   /* remove webkit p margins */
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
