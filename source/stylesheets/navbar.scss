@@ -1,8 +1,34 @@
+$navbarHeight: 70px;
+
 .kodelounge-navbar {
-  background-color: black !important;
+  background: transparent;
+  transition: top 0.2s ease-in-out;
+  height: $navbarHeight;
+
+  &.nav-up {
+    top: -$navbarHeight;
+  }
 
   .navbar-brand,
   .nav-link {
     color: white !important;
+  }
+
+  .navbar-brand {
+    &,
+    &:focus,
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  @media screen and (max-width: 374px) {
+    .brand-name {
+      display: none;
+    }
+    .navbar-nav {
+      position: relative;
+      left: -20px;
+    }
   }
 }
