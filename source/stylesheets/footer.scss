@@ -1,14 +1,66 @@
 .footer-container {
   position: relative;
-  height: 40vh;
-  max-height: 400px;
-  background-color: black;
+  background-color: $darkBtnColor;
   color: white;
   text-align: center;
 
-  h2 {
-    position: relative;
+  .logo-container,
+  .social-container {
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  .logo-container {
+    left: 20px;
+    font-size: 1.25rem;
+  }
+
+  .social-container {
+    right: 20px;
+  }
+
+  @media screen and (max-width: 649px) {
+    height: 50px;
+
+    .logo-container {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      .logo-brand-name {
+        display: none;
+      }
+    }
+    .brand-name {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 20px;
+    }
+  }
+
+  @media screen and (max-width: 429px) {
+    .brand-name {
+      left: 10px;
+      font-size: 14px;
+    }
+    .social-container {
+      right: 10px;
+      a:first-child,
+      a:nth-child(2) {
+        margin-right: 0.5rem !important;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 329px) {
+    .brand-name {
+      font-size: 12px;
+    }
   }
 }
