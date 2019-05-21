@@ -4,6 +4,10 @@
     position: relative;
     text-align: center;
     color: $brandColor;
+
+    @media screen and (max-width: 385px) {
+      line-height: 40px;
+    }
   }
   .sub-heading {
     position: relative;
@@ -118,8 +122,17 @@
     .tech-categories-container {
       position: relative;
 
-      .tech-category {
-        .tech-heading {
+      @media screen and (max-width: 344px) {
+        .tech-category {
+          max-width: 100%;
+          margin: auto;
+          margin-top: 1rem;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+        .vertical-spacing {
+          display: none !important;
         }
       }
     }
@@ -133,13 +146,11 @@
   }
 
   .team-container {
-    .team-image-container {
-      margin: 20px;
-      height: 100%;
-      background-image: url("../images/team2.png");
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
+    background-image: url("../images/team2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 800px;
+    margin: 20px;
   }
 
   .office-container {
