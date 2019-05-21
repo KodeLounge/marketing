@@ -3,6 +3,7 @@
     line-height: 66px;
     position: relative;
     text-align: center;
+    color: $brandColor;
   }
   .sub-heading {
     position: relative;
@@ -35,14 +36,16 @@
   .principles-container,
   .tech-container,
   .office-container,
-  .about-container {
+  .about-container,
+  .contact-container {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
 
   .hero-container {
     color: white;
-    background-color: black;
+    background: url("../images/hero-image.png") no-repeat right;
+    background-size: cover;
   }
 
   .intro-container {
@@ -140,6 +143,7 @@
   }
 
   .office-container {
+    background-color: $colorGrayLightBackground;
     .heading-wrapper {
       .heading,
       .body {
@@ -147,11 +151,12 @@
       }
     }
     .map-container {
-      height: 60vh;
-      width: 90%;
+      height: 40vh;
+      width: 100%;
       position: relative;
       #map {
-        width: 90%;
+        border: 1px solid $colorGrayMedium;
+        width: 100%;
         height: 100%;
       }
     }
@@ -166,16 +171,15 @@
     }
 
     .form-container {
-      width: 90% !important;
+      width: 100% !important;
 
       input {
-        width: 90% !important;
+        width: 100% !important;
         height: 40px !important;
       }
 
       #message-contact-us {
-        width: 90%;
-        border: 1px solid rgb(238, 238, 238);
+        width: 100%;
       }
     }
   }

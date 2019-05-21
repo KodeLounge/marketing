@@ -4,7 +4,7 @@
   
   <div class="hero-container ">
     <div class="hero-wrapper col-12">
-      <div class="heading font-size-xlg font-wt-700">Build to Last.</div>
+      <div class="heading font-size-xlg font-wt-700">Build to Last</div>
       <div class="sub-heading font-size-lg font-wt-500 mt-2">Software Solution Building For Innovative Companies</div>
     </div>
   </div>
@@ -12,7 +12,7 @@
   <div class="intro-container">
     <div class="intro-wrapper col-12">
       <div class="heading font-size-xlg font-wt-700">Who are we?</div>
-      <div class="sub-heading font-size-lg font-wt-300 mt-2">
+      <div class="sub-heading font-size-lg font-wt-100 mt-2">
         Kode Loungers are in-house, full-time <br> 
         resources committed to the success of our <br>
         clients. We work in small, empowered <br>
@@ -215,51 +215,50 @@
   </div>
 
   <div class="office-container">
-    <div class="row">
-      <div class="heading-wrapper col-12 col-md-6 pl-5">
-        <div class="heading font-size-xlg font-wt-700 mb-5">Our Office</div>
-        <div class="body font-size-default font-wt-300 my-5 pt-4">
-          Kode Lounge India Pvt. Ltd. <br>
-          Pune, India
+    <div class="office-wrapper col-12">
+      <div class="heading font-size-xlg font-wt-700 mb-5">Our Office</div>
+      <div class="row">
+        <div class="address-container font-size-default font-wt-300 my-5 pt-4 col-xs-12 col-sm-4 offset-sm-2">
+          <div class="office-name font-wt-700">Kode Lounge India Pvt. Ltd.</div>
+          <div class="office-address">
+            Office 302, 3<sup>rd</sup> Floor, Kapil Zenith IT Park,<br>
+            Behind Maratha Mandir, Bavdhan Khurd<br>
+            Pune, Maharashtra, India-411021
+          </div>
         </div>
+        <div class="map-container col-xs-12 col-sm-4">
+          <div id="map"></div>
+        </div>
+        <div class="clearfix"></div>
       </div>
-      <div class="map-container col-12 col-md-6">
-        <div id="map"></div>
-      </div>
-      <div class="clearfix"></div>
     </div>
+    
   </div>
 
   <div class="contact-container" id="contact-us-section">
-    <div class="row">
-      <div class="heading-wrapper col-12 col-md-4 pl-5">
-        <div class="heading font-size-xlg font-wt-700 mb-5">Contact Us</div>
-        <div class="body font-size-default font-wt-300 my-5 pt-4">
-          The following is placeholder text known as “lorem ipsum,” which is scrambled Latin used by designers to mimic real copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec congue purus. Aenean eu justo sed elit dignissim aliquam. Mauris id fermentum nulla.
+    <div class="heading-wrapper pl-5">
+      <div class="heading font-size-xlg font-wt-700 text-center mb-5">Get In Touch</div>
+    </div>
+    <div class="form-container col-lg-6 offset-lg-3 col-sm-8 offset-sm-2 col-xs-12 mb-5">
+      <form id="contact-us-form" class="parsley-form" data-parsley-validate="" data-parsley-ui-enabled="true" data-parsley-trigger="change focusout" data-parsley-focus="first">
+        <div class="font-size-default font-wt-100 my-4">Name <sup>*</sup> </div>
+        <div class="name-container">
+          <input type="text" id="name-contact-us" required="required" title="Name is required">
         </div>
-      </div>
-      <div class="form-container col-12 col-md-8 mb-5">
-        <form id="contact-us-form" class="parsley-form" data-parsley-validate="" data-parsley-ui-enabled="true" data-parsley-trigger="change focusout" data-parsley-focus="first">
-          <div class="font-size-default font-wt-100 my-4">Name <sup>*</sup> </div>
-          <div class="name-container">
-            <input type="text" id="name-contact-us" required="required" title="Name is required">
-          </div>
-          <div class="email-container">
-            <div class="font-size-default font-wt-100 my-4">Email Address <sup>*</sup></div>
-            <div><input type="email" id="email-contact-us" required="required" title="Valid email is required"></div>
-          </div>
-          <div class="subject-container">
-            <div class="font-size-default font-wt-100 my-4">Subject <sup>*</sup></div>
-            <div><input type="text" id="subject-contact-us" required="required" title="Valid email is required"></div>
-          </div>
-          <div class="font-size-default font-wt-100 my-4">Message <sup>*</sup></div>
-          <div><textarea id="message-contact-us" rows="10" required="required"></textarea></div>
-
-          <div class="button-container mt-4">
-            <button class="submit-button action-dark-btn" id="submit-contact-us">SUBMIT</button>
-          </div>
-				</form>
-      </div>
+        <div class="email-container">
+          <div class="font-size-default font-wt-100 my-4">Email Address <sup>*</sup></div>
+          <div><input type="email" id="email-contact-us" required="required" title="Valid email is required"></div>
+        </div>
+        <div class="subject-container">
+          <div class="font-size-default font-wt-100 my-4">Subject <sup>*</sup></div>
+          <div><input type="text" id="subject-contact-us" required="required" title="Valid email is required"></div>
+        </div>
+        <div class="font-size-default font-wt-100 my-4">Message <sup>*</sup></div>
+        <div><textarea id="message-contact-us" rows="6" required="required"></textarea></div>
+        <div class="button-container text-center mt-4">
+          <button class="submit-button action-dark-btn" id="submit-contact-us">SUBMIT</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>

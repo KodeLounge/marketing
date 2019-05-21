@@ -3,21 +3,22 @@
   background-color: white;
   color: black;
   font-size: 14px;
-  padding: 10px 15px;
+  padding: 6px 30px;
   font-weight: 500;
   transition: 0.1s background-color linear, 0.1s color linear;
   &:hover {
     background-color: black;
     color: white;
+    cursor: pointer;
   }
 }
 
 .action-dark-btn {
   @extend .action-btn;
-  background-color: black;
+  background-color: $darkBtnColor;
   color: white;
   transition: 0.1s opacity linear;
   &:hover {
-    opacity: 0.8;
+    background-color: $darkBtnColor;
   }
 }
