@@ -86,7 +86,7 @@
         display: inline-flex;
       }
       img {
-        height: 50%;
+        height: 14vh;
       }
       .client-image {
         position: relative;
@@ -103,6 +103,7 @@
   }
 
   .principles-container {
+
     .principles-contents-wrapper {
       width: 80%;
       position: relative;
@@ -257,4 +258,7 @@
   /* remove webkit p margins */
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
+}
+.principles-container{
+  background: $colorGrayLightBackground;;
 }
